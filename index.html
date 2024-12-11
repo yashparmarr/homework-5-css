@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .last {
+            display: flex;
+            margin-left: 6px;
+            align-items: center;
+        }
+
+        .border {
+            border: 2px solid red;
+            margin: 15px 6px;
+            padding: 10px 10px;
+        }
+
+        .main {
+            border: 2px solid red;
+            margin-top:40px ;
+            margin-left: 40px;
+            width: 40%;
+        }
+
+        .upper {
+            margin-top: -10px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="border box">I'm a box</h1>
+      <p class="border para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta nam
+        nobis doloribus asperiores omnis quisquam consequuntur laudantium, magni
+        inventore dignissimos rem minima blanditiis magnam? Autem possimus
+        reprehenderit non beatae.
+      </p>
+      <div class="border">
+        <div class="border">this list is a box</div>
+        <div class="border upper">and all the list items in it are boxes</div>
+      </div>
+      <div class="last">
+        <p>even</p>
+        <button class="border">buttons</button>
+        <p>and</p>
+        <a href="" class="border">link</a>
+        <p>are boxes.</p>
+      </div>
+    </div>
+  </body>
+</html>
